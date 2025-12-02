@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | ThreatForce</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">ThreatForce</a></div>
+    <button class="hamburger" id="hamburger">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Services ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="services.html#awareness">Cyber Awareness</a></li>
+          <li><a href="services.html#implementation">Implementation</a></li>
+          <li><a href="services.html#endpoint">Endpoint Security</a></li>
+          <li><a href="services.html#incident">Incident Response</a></li>
+          <li><a href="services.html#cloud">Cloud & Zero Trust</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="signin.html">Sign In</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <canvas id="bg-canvas"></canvas>
+    <div class="hero-content hero-box">
+      <h1>About ThreatForce</h1>
+      <p>Empowering SMEs to defend against cyber threats through human-focused security training.</p>
+    </div>
+  </header>
+
+  <!-- Problem & Mission Statements -->
+  <section class="section fade-in">
+    <h2>Problem Statement</h2>
+    <p>Many SMEs operate with limited cybersecurity infrastructure and lack dedicated personnel. Employees often unknowingly click phishing links or reuse weak passwords. ThreatForce focuses on the human side of cybersecurity to mitigate risk.</p>
+  </section>
+
+  <section class="section fade-in">
+    <h2>Mission Statement</h2>
+    <p>Our mission is to equip SMEs with interactive, scenario-based training. We help employees recognize phishing, maintain password hygiene, respond to ransomware threats, and adopt industry best practices.</p>
+  </section>
+
+  <!-- Meet the Team -->
+  <section class="section fade-in">
+    <h2>Meet the Team</h2>
+    <div class="cards-section">
+      <div class="card"><h3>Mariam Yesufu</h3><p>Cybersecurity Educator & Consultant</p></div>
+      <div class="card"><h3>David Ryan</h3><p>Lead Security Analyst</p></div>
+      <div class="card"><h3>David Rahim</h3><p>Incident Response Specialist</p></div>
+      <div class="card"><h3>Claudia O Callaghan</h3><p>Training Content Developer</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>ThreatForce</h4>
+        <p>Empowering businesses through cybersecurity education and awareness training.</p>
+        <p>Email: info@threatforce.com<br>Phone: +353 1 234 5678</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="#"><svg width="24" height="24" fill="#87bfff"><path d="M19 0h-14c-2.761..."/></svg></a>
+          <a href="#"><svg width="24" height="24" fill="#87bfff"><path d="M24 4.557..."/></svg></a>
+          <a href="#"><svg width="24" height="24" fill="#87bfff"><path d="M12 .297c-6.63..."/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> ThreatForce. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In | ThreatForce</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">ThreatForce</a></div>
+    <button class="hamburger" id="hamburger">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Services ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="services.html#awareness">Cyber Awareness</a></li>
+          <li><a href="services.html#implementation">Implementation</a></li>
+          <li><a href="services.html#endpoint">Endpoint Security</a></li>
+          <li><a href="services.html#incident">Incident Response</a></li>
+          <li><a href="services.html#cloud">Cloud & Zero Trust</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="signin.html" class="active">Sign In</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <canvas id="bg-canvas"></canvas>
+    <div class="hero-content hero-box" style="max-width:400px;">
+      <h1>Sign In</h1>
+      <form class="signin-form fade-in">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="your@email.com" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="********" required>
+        <button type="submit" class="btn primary">Sign In</button>
+      </form>
+      <p style="margin-top:1rem;color:var(--sky);font-size:0.9rem;">Don't have an account? <a href="#" style="color:var(--accent);">Contact us</a></p>
+    </div>
+  </header>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>ThreatForce</h4>
+        <p>Empowering businesses through cybersecurity education and awareness training.</p>
+        <p>Email: info@threatforce.com<br>Phone: +353 1 234 5678</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="#"><svg width="24" height="24" fill="#87bfff"><path d="M19 0h-14c-2.761..."/></svg></a>
+          <a href="#"><svg width="24" height="24" fill="#87bfff"><path d="M24 4.557..."/></svg></a>
+          <a href="#"><svg width="24" height="24" fill="#87bfff"><path d="M12 .297c-6.63..."/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> ThreatForce. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
